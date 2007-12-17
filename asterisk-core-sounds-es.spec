@@ -19,7 +19,6 @@ Requires:	locales-es
 Provides:	asterisk-core-sounds
 Conflicts:	asterisk-core-sounds-en asterisk-core-sounds-fr
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 
 %description
 Asterisk is an Open Source PBX and telephony development platform that can both
