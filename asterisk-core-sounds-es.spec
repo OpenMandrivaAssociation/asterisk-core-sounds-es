@@ -33,7 +33,7 @@ Asterisk talks to a variety of telephony hardware including BRI, PRI, POTS, and
 IP telephony clients using the Inter-Asterisk eXchange protocol (e.g. gnophone
 or miniphone).
 
-This package contains freely usable recorded sounds that were meant to be used
+This package contains freely usable music that were meant to be used
 with Asterisk in the following formats: a-Law, G.722, G.729, GSM, Siren7, 
 Siren14, sln16, mu-Law, WAV
 
@@ -57,15 +57,15 @@ done
 %install
 rm -rf %{buildroot}
 
-install -d %{buildroot}%{_datadir}/asterisk/sounds/es
+install -d %{buildroot}/var/lib/asterisk/sounds/es
 
-cp -aRf * %{buildroot}%{_datadir}/asterisk/sounds/es/
+cp -aRf * %{buildroot}/var/lib/asterisk/sounds/es/
 
 # cleanup
-rm -f %{buildroot}%{_datadir}/asterisk/sounds/*-asterisk-core-*-%{version}
+#rm -f %{buildroot}/var/lib/asterisk/sounds/*-asterisk-core-*-%{version}
 
 # make a file list
-find %{buildroot}%{_datadir}/asterisk/sounds -type f | sed -e "s|%{buildroot}||" | sed -e 's/^/%attr(0644,root,root) /' >> %{name}.filelist
+find %{buildroot}/var/lib/asterisk/sounds -type f | sed -e "s|%{buildroot}||" | sed -e 's/^/%attr(0644,root,root) /' >> %{name}.filelist
 
 %clean
 rm -rf %{buildroot}
