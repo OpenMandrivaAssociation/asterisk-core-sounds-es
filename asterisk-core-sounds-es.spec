@@ -74,3 +74,77 @@ rm -rf %{buildroot}
 %files -f %{name}.filelist
 %defattr(-,root, root)
 %doc *-asterisk-core-*-%{version}
+
+
+%changelog
+* Thu Jul 19 2012 Lonyai Gergely <aleph@mandriva.org> 1.4.22-1mdv2012.0
++ Revision: 810236
+- 1.4.22
+
+* Fri Jun 03 2011 Lonyai Gergely <aleph@mandriva.org> 1.4.21-1
++ Revision: 682578
+- 1.4.21
+
+* Fri Oct 22 2010 Lonyai Gergely <aleph@mandriva.org> 1.4.20-1mdv2011.0
++ Revision: 587279
+- 1.4.20
+
+* Sat Jul 10 2010 Lonyai Gergely <aleph@mandriva.org> 1.4.19-1mdv2011.0
++ Revision: 550213
+- 1.4.19
+
+* Wed Jan 06 2010 Lonyai Gergely <aleph@mandriva.org> 1.4.17-1mdv2010.1
++ Revision: 486679
+- 1.4.17
+
+* Mon Mar 30 2009 Lonyai Gergely <aleph@mandriva.org> 1.4.15-1mdv2009.1
++ Revision: 362491
+- Update: 1.4.15
+
+* Wed Mar 18 2009 Lonyai Gergely <aleph@mandriva.org> 1.4.14-2mdv2009.1
++ Revision: 356994
+- asterisk-core-sounds-es-1.4.14-2mdv2009.1
+- asterisk-core-sounds-es-1.4.14-2mdv2009.1
+
+* Thu Feb 19 2009 Lonyai Gergely <aleph@mandriva.org> 1.4.14-1mdv2009.1
++ Revision: 343016
+- asterisk-core-sounds-en-1.4.14-1mdv2009.1
+
+* Thu Dec 11 2008 Oden Eriksson <oeriksson@mandriva.com> 1.4.13-2mdv2009.1
++ Revision: 313459
+- adjust path for asterisk 1.6.x
+
+* Tue Oct 14 2008 Oden Eriksson <oeriksson@mandriva.com> 1.4.13-1mdv2009.1
++ Revision: 293638
+- 1.4.13
+- 1.4.12
+
+* Thu Aug 07 2008 Thierry Vignaud <tv@mandriva.org> 1.4.11-2mdv2009.0
++ Revision: 266197
+- rebuild early 2009.0 package (before pixel changes)
+
+  + Pixel <pixel@mandriva.com>
+    - adapt to %%_localstatedir now being /var instead of /var/lib (#22312)
+
+* Wed Apr 09 2008 Oden Eriksson <oeriksson@mandriva.com> 1.4.11-1mdv2009.0
++ Revision: 192509
+- 1.4.11
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Mon Sep 10 2007 Oden Eriksson <oeriksson@mandriva.com> 1.4.5-2mdv2008.0
++ Revision: 84044
+- rebuild
+
+
+* Thu Feb 15 2007 Oden Eriksson <oeriksson@mandriva.com> 1.4.5-1mdv2007.0
++ Revision: 121450
+- Import asterisk-core-sounds-es
+
+* Thu Feb 15 2007 Oden Eriksson <oeriksson@mandriva.com> 1.4.5-1mdv2007.1
+- initial Mandriva package
+
