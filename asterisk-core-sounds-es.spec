@@ -4,7 +4,7 @@
 Summary:	Spanish sound files for the Asterisk PBX and telephony application and toolkit
 Name:		asterisk-core-sounds-es
 Version:	1.4.22
-Release:	%mkrel 1
+Release:	2
 License:	Public Domain
 Group:		System/Servers
 URL:		http://www.asterisk.org/
